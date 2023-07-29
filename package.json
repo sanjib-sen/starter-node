@@ -1,0 +1,33 @@
+{
+  "name": "starter-node",
+  "version": "1.0.0",
+  "description": "Just a cool description",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "eslint --ext .js,.ts .",
+    "dev": "nodemon --watch src src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanjib-sen/starter-node.git"
+  },
+  "homepage": "https://github.com/sanjib-sen/starter-node#readme",
+  "keywords": [
+    "starter"
+  ],
+  "author": "Sanjib Kumar Sen <mail@sanjibsen.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
+    "nodemon": "*",
+    "typescript": "*"
+  }
+}
