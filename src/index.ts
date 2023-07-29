@@ -3,4 +3,4 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-process.stdout.write("Hello World!n");
+process.stdout.write("Hello World!\n");

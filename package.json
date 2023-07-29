@@ -8,6 +8,7 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint": "eslint --ext .js,.ts .",
     "dev": "nodemon --watch src src/index.ts",
+    "docker:up": "npm run build && docker-compose up -d",
     "start": "node dist/index.js"
   },
   "repository": {
