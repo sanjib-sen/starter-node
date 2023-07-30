@@ -13,7 +13,7 @@ A always up-to-date starter template for Node.js projects with [TypeScript](http
 
 ## Getting Started
 
-Just use this as a template for your new project and you are good to go.
+Just use this as a [template](https://github.com/new?template_name=starter-node&template_owner=sanjib-sen) for your new project and you are good to go.
 
 ## NPM Scripts
 
