@@ -4,12 +4,12 @@
   "description": "Just a cool description",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|md)\"",
+    "lint": "eslint --ext .js,.ts,.json --fix .",
     "dev": "nodemon --watch src src/index.ts",
-    "docker:up": "npm run build && docker-compose up -d",
-    "start": "node dist/index.js"
+    "build": "npm run format && npm run lint && tsc",
+    "start": "npm run build && node dist/src/index.js",
+    "docker:up": "docker-compose build --no-cache && docker-compose up"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
     "eslint-config-prettier": "*",
     "eslint-plugin-prettier": "*",
     "nodemon": "*",
+    "ts-node": "*",
     "typescript": "*"
-  }
+  },
+  "dependencies": {}
 }

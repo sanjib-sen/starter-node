@@ -5,41 +5,25 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
+- [NPM Scripts](#npm_scripts)
 
 ## About
 
-Write about 1-2 paragraphs describing the purpose of your project.
+A always up-to-date starter template for Node.js projects with [TypeScript](https://www.typescriptlang.org/), [Nodemon](https://npmjs.com/package/nodemon), [Prettier](https://prettier.io), [ESLint](https://eslint.org), [Docker](https://www.docker.com/), and [docker-compose](https://docs.docker.com/compose/) support.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Just use this as a template for your new project and you are good to go.
 
-### Prerequisites
+## NPM Scripts
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage
-
-Add notes about how to use the system.
+| **Command**           | **Action**                                                                                                 | **preCommands**                   |
+| --------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| `npm install`         | Install all necessary dependencies                                                                         |                                   |
+| `npm run dev`         | Run and monitor changes using [nodemon](https://npmjs.com/package/nodemon)                                 |                                   |
+| `npm run build`       | Compile Typescript files to JavaScript. (Output directory=`/dist`)                                         | `npm run format && npm run lint`  |
+| `npm run format`      | Format files using [Prettier](https://prettier.io)                                                         |                                   |
+| `npm run lint`        | Check and Fix Linting issues using [ESLint](https://eslint.org)                                            |                                   |
+| `npm run start`       | Compile TypeScript Files to JavaScript and run.                                                            | `npm run build`                   |
+| `npm run docker:up`   | Prepare, build and run Docker container using [docker-compose up](https://docs.docker.com/compose) command | `docker-compose build --no-cache` |
+| `npm run docker:down` | Stop Docker container using [docker-compose down](https://docs.docker.com/compose) command                 |                                   |

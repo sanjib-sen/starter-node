@@ -3,4 +3,5 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-process.stdout.write("Hello World!\n");
+import { name } from "../package.json";
+process.stdout.write(`Hello from ${name}!\n`);

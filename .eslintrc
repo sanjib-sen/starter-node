@@ -11,10 +11,8 @@
         "prettier"
     ],
     "rules": {
-        "no-console": 1, // Means warning
-        "prettier/prettier": 2 // Means error
-    },
-    "env": {
-        "esnNext": true
+        // 0 means off, 1 Means warning, 2 means error
+        "no-console": 2,
+        "prettier/prettier": 2
     }
 }
